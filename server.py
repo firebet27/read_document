@@ -40,9 +40,10 @@ DATA_DIR = APP_DIR / ".docatlas"
 DB_PATH = DATA_DIR / "docatlas.db"
 SETTINGS_PATH = DATA_DIR / "settings.json"
 SECRETS_PATH = DATA_DIR / "secrets.json"
+DEFAULT_LIBRARY_ROOT = Path(os.getenv("DOCATLAS_LIBRARY_ROOT", "F:/Library"))
 DEFAULT_LIBRARIES = {
-    "ericsson": APP_DIR.parent / "Ericsson_Alex",
-    "zte": APP_DIR.parent / "ZTE_Alex",
+    "ericsson": DEFAULT_LIBRARY_ROOT / "Ericsson_Alex",
+    "zte": DEFAULT_LIBRARY_ROOT / "ZTE_Alex",
 }
 MAX_INDEX_BYTES = 16 * 1024 * 1024
 MAX_TEXT_CHARS = 1_750_000

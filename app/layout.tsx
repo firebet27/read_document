@@ -15,7 +15,7 @@ const plexMono = IBM_Plex_Mono({
 
 export const metadata: Metadata = {
   title: 'DocAtlas — Thư viện kỹ thuật local',
-  description: 'Đọc, tìm kiếm và hỏi AI trên thư viện tài liệu kỹ thuật Alex.',
+  description: 'Đọc, tìm kiếm và hỏi AI trên tài liệu Ericsson Alex và ZTE eReader.',
 };
 
 export default function RootLayout({
